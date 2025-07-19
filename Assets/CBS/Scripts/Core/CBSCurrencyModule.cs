@@ -22,7 +22,7 @@ namespace CBS
         private ICBSInAppPurchase InAppPurchase { get; set; }
         private IAuth Auth { get; set; }
         private AuthData AuthData { get; set; }
-
+         
         protected override void Init()
         {
             Profile = Get<CBSProfileModule>();
