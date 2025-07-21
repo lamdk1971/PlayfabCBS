@@ -23,7 +23,7 @@ MonoBehaviour:
   LoadItemsType: 0
   AutoGenerateRandomNickname: 1
   RandomNamePrefix: Player_
-  AutoLogin: 0
+  AutoLogin: 1
   DisplayNameProfanityCheck: 0
   DeviceIdProvider: 1
   NewPlayerCheckSolution: 0

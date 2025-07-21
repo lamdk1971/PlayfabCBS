@@ -5,6 +5,7 @@ namespace CBS.Models
     {
         PLAYERS,
         CLANS,
-        FRIENDS
+        FRIENDS,
+        PRIVOUS
     }
 }

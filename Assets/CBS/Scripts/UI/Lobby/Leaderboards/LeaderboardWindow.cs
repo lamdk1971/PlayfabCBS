@@ -77,6 +77,47 @@ namespace CBS.UI
                 MaxCount = maxCount
             };
 
+            if (leaderboardType == LeaderboardTabType.PRIVOUS)
+            {
+                // Bước 1: Lấy version hiện tại
+                Leaderboard.GetLeadearboard(leaderboardRequest, (result) =>
+                {
+                    if (result.IsSuccess)
+                    {
+                        int currentVersion = result.Version;
+                        if (currentVersion > 1)
+                        {
+                            // Bước 2: Lấy version trước
+                            var prevRequest = new CBSGetLeaderboardRequest
+                            {
+                                StatisticName = statisticName,
+                                MaxCount = maxCount,
+                                Version = currentVersion - 1
+                            };
+                            if (leaderboardView == LeaderboardView.TOP)
+                            {
+                                Leaderboard.GetLeadearboard(prevRequest, OnGetLeaderboard);
+                            }
+                            else
+                            {
+                                Leaderboard.GetLeadearboardAround(prevRequest, OnGetLeaderboard);
+                            }
+                        }
+                        else
+                        {
+                            // Không có version trước
+                            VersionTitle.text = "Không có version trước";
+                            ProfileScroller.HideAll();
+                            ClanScroller.HideAll();
+                        }
+                    }
+                    else
+                    {
+                        new PopupViewer().ShowFabError(result.Error);
+                    }
+                });
+                return;
+            }
             if (leaderboardType == LeaderboardTabType.PLAYERS)
             {
                 if (leaderboardView == LeaderboardView.TOP)

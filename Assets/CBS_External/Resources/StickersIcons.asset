@@ -12,4 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3adb2b4d259f4c8438837d270f63ed97, type: 3}
   m_Name: StickersIcons
   m_EditorClassIdentifier: 
-  AllSprites: []
+  AllSprites:
+  - ID: sticker_1
+    Sprite: {fileID: 21300000, guid: f511352adbeeb834398b1624d718c9b3, type: 3}
+  - ID: sticker_2
+    Sprite: {fileID: 21300000, guid: da3186dd5ef6b464eb207d9f2d6a9a1a, type: 3}
+  - ID: sticker_3
+    Sprite: {fileID: 21300000, guid: 05c748187a5e8a347b8460cd1f41fbd1, type: 3}
+  - ID: sticker_4
+    Sprite: {fileID: 21300000, guid: 0e8e47445b858894ca7fbf7f7dd65a34, type: 3}
+  - ID: sticker_5
+    Sprite: {fileID: 21300000, guid: b07fa35cf47a9e842a3e080cb38babd2, type: 3}
+  - ID: sticker_6
+    Sprite: {fileID: 21300000, guid: a0b21f30e23a3994a80a374c0f163c0d, type: 3}
+  - ID: sticker_7
+    Sprite: {fileID: 21300000, guid: 7e4c62e041f79bc4a8d55a62260bef48, type: 3}
+  - ID: sticker_8
+    Sprite: {fileID: 21300000, guid: 925b8100956a95a4484c6afc7f9b85d2, type: 3}

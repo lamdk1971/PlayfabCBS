@@ -12,4 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f682705afe6225146a12e4d27ddef097, type: 3}
   m_Name: CurrencyIcons
   m_EditorClassIdentifier: 
-  AllSprites: []
+  AllSprites:
+  - ID: CO
+    Sprite: {fileID: 21300000, guid: 2c4bbce202453324fb227b913eb29a34, type: 3}
+  - ID: EN
+    Sprite: {fileID: 21300000, guid: 51bec657c468e3141900097a640c35eb, type: 3}
+  - ID: RB
+    Sprite: {fileID: 21300000, guid: 67649c7895e3e604dbc4ddd606c88105, type: 3}
+  - ID: PackCoin
+    Sprite: {fileID: 21300000, guid: cd61ad3f7fee6bc4ba4ea6bb7d831608, type: 3}

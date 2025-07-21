@@ -9,11 +9,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5d0199c11aa6f514784c5c69cd8378d8, type: 3}
-  m_Name: PlayFabEditorPrefsSO
+  m_Script: {fileID: 11500000, guid: ae47ee5690e6bb9469f82da0c345370f, type: 3}
+  m_Name: StoreIcons
   m_EditorClassIdentifier: 
-  SdkPath: 
-  EdExPath: 
-  PanelIsShown: 0
-  curMainMenuIdx: 0
-  curSubMenuIdx: 0
+  AllSprites:
+  - ID: item_booster_1
+    Sprite: {fileID: 0}

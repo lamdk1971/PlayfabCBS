@@ -97,7 +97,21 @@ namespace CBS.Example
             var result = int.TryParse(input, out val);
             if (result)
             {
-
+                Leaderboard.AddStatisticPoint("Score", val, onAdd =>
+                {
+                    if (onAdd.IsSuccess)
+                    {
+                        new PopupViewer().ShowSimplePopup(new PopupRequest
+                        {
+                            Title = "Success",
+                            Body = "You are successful add score leaderboard"
+                        });
+                    }
+                    else
+                    {
+                        new PopupViewer().ShowFabError(onAdd.Error);
+                    }
+                });
             }
         }
 

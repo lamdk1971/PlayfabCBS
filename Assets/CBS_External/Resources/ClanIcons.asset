@@ -12,8 +12,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 765cef39fb267dc4499e396f7d26202f, type: 3}
   m_Name: ClanIcons
   m_EditorClassIdentifier: 
-  AllSprites: []
-  DefaultAvatar: {fileID: 0}
+  AllSprites:
+  - ID: clan_icon_1
+    Sprite: {fileID: 21300000, guid: 47d1af030f97a814e8dd76f96e07682d, type: 3}
+  - ID: clan_icon_2
+    Sprite: {fileID: 21300000, guid: f56fdb26d929b9141ad0ba0b8126eee8, type: 3}
+  - ID: clan_icon_3
+    Sprite: {fileID: 21300000, guid: b0450e764a3ba6b4aa1db0c59d0ca61b, type: 3}
+  - ID: clan_icon_4
+    Sprite: {fileID: 21300000, guid: 9c979014de60cbb4aa07d2006e2f6ad5, type: 3}
+  - ID: clan_icon_5
+    Sprite: {fileID: 21300000, guid: 7c4f97c152cfa8149ab533ee9b322cf7, type: 3}
+  - ID: clan_icon_6
+    Sprite: {fileID: 21300000, guid: bf95ca977fb6b6748a592d3592d1d914, type: 3}
+  DefaultAvatar: {fileID: 21300000, guid: d7baaf82bd0d16f4f8a93ef0589e1e34, type: 3}
   DisplayMode: 0
   Backgrounds: []
   Foregrounds: []
